@@ -1,0 +1,22 @@
+<div class="container" style="overflow-x:auto; padding:1rem">
+  <table class="data-table">
+    <tr>
+      <th>#</th>
+      <th>State</th>
+      <th>Confirmed</th>
+      <th>Recovered</th>
+      <th>Deceased</th>
+      <th>Tested</th>
+    </tr>
+    {{#each fetchedData.Result as |one|}}
+      <tr>
+        <td>{{one.sNo}}</td>
+        <td>{{one.state}}</td>
+        <td>{{one.confirmed}}</td>
+        <td>{{one.recovered}}</td>
+        <td>{{one.deceased}}</td>
+        <td>{{one.tested}}</td>
+      </tr>
+    {{/each}}
+  </table>
+</div>

@@ -1,0 +1,27 @@
+<div align="center">
+      <img style="margin: 20px; height: 80px;" src="assets/images/covid-19.svg" alt="Not Found" id="rotate"/>
+</div>
+<h1>Covid-19 Cases</h1>
+<div class="container" style=" margin-top: 20px;">
+  <div class="row" style="margin: 25px;">
+    <div class="card col-md box-style" style="border-left: 7px solid red; color: red;">
+      <div class="card-body">
+        <p class="card-text">Total number of Confirmed:</p>
+        <h5 class="card-title">{{ @model.confirmed }}</h5>
+      </div>
+    </div>
+    <div class="card col-md box-style" style="border-left: 7px solid #07f046; color: #07f046;">
+      <div class="card-body">
+        <p class="card-text">Total number of Recovered:</p>
+        <h5 class="card-title">{{ @model.recovered }}</h5>
+      </div>
+    </div>
+    <div class="card col-md box-style" style=" border-left: 7px solid gray; color: gray;">
+      <div class="card-body">
+        <p class="card-text">Total number of Deceased:&nbsp;</p>
+        <h5 class="card-title">{{ @model.deceased }}</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<StateData/>
